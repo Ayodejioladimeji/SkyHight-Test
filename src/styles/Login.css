@@ -1,0 +1,84 @@
+.login {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.login-center {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 0;
+}
+
+.login-center .list-group-item.active {
+  background: rgb(65, 61, 61) !important;
+  outline: none !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.login-center label {
+  color: #00b87c;
+}
+
+.login-center input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.login-center input {
+  font-size: 14px;
+  padding: 12px;
+}
+
+.login-center button {
+  background: #00b87c;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.login-center button:hover {
+  color: #fff;
+  background: #00b87c;
+}
+
+/* ============================================== */
+/* THE SECTION OF THE MEDIA QUERY */
+@media screen and (min-width: 1000px) {
+  .login {
+    display: flex;
+    align-items: center;
+  }
+
+  .login-center {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .login {
+    padding-left: 0;
+  }
+
+  .login {
+    padding-left: 0;
+  }
+
+  .login-center input {
+    padding: 12px;
+  }
+
+  .login-center button {
+    width: 100% !important;
+    padding: 15px !important;
+  }
+}
