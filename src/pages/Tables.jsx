@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getData } from '../Utils/Common';
 import '../styles/Table.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Pagination from '../paginate/Pagination';
 import Loader from 'react-loader-spinner';
 
