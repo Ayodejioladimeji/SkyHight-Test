@@ -81,7 +81,7 @@ const Header = () => {
   return (
     <header className={navbar ? 'navbar active' : 'navbar'}>
       <div className='logo'>
-        <Link to='/charts'>
+        <Link to='/'>
           <FaAccusoft className='logo-icon' />
           SkyHigh
         </Link>
@@ -102,7 +102,7 @@ const Header = () => {
           <li>
             <NavLink
               exact
-              to='/'
+              to='/login'
               className='link'
               activeClassName='link-active'
             >

@@ -1,0 +1,35 @@
+.notfound{
+    padding:120px 0;
+}
+
+.not-center{
+    /* background:#38023b98; */
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+    text-align:center;
+    border-radius:10px;
+    padding:70px 0;
+}
+
+.not-center > h1{
+    font-size:85px;
+    font-family:cursive;
+    color:crimson;
+}
+
+.not-center h2{
+    font-size:35px;
+    font-family:cursive;
+    color:crimson;
+}
+
+.not-center h3{
+    color:#38023B;
+    margin-top:10px;
+}
+
+.not-center h3 span{
+    color:red;
+    font-size:15px;
+}

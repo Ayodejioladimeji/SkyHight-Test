@@ -6,13 +6,16 @@ import Login from './../pages/Login';
 import PrivateRoute from './../Utils/PrivateRoute';
 import PieChart from './../pages/PieChart';
 import LineChart from '../pages/LineChart';
+import { getUser } from '../Utils/Common';
+import NotFound from './../pages/NotFound';
 
 const Routes = () => {
+  const isLogged = getUser();
   return (
     <Switch>
-      <Route exact path='/' component={Login} />
+      <Route exact path='/login' component={isLogged ? NotFound : Login} />
 
-      <PrivateRoute exact path='/charts' component={Charts} />
+      <PrivateRoute exact path='/' component={Charts} />
       <PrivateRoute exact path='/pie_chart' component={PieChart} />
       <PrivateRoute exact path='/line_chart' component={LineChart} />
 

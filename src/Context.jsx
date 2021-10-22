@@ -46,7 +46,7 @@ const ContextProvider = ({ children }) => {
         ...values,
       });
 
-      window.location.href = '/charts';
+      window.location.href = '/';
     } catch (err) {
       toast.error('error logging in');
     }
