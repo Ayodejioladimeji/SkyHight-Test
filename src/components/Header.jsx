@@ -32,12 +32,7 @@ const Header = () => {
     return (
       <>
         <li>
-          <NavLink
-            exact
-            to='/charts'
-            className='link'
-            activeClassName='link-active'
-          >
+          <NavLink exact to='/' className='link' activeClassName='link-active'>
             Bar Chart
           </NavLink>
         </li>
