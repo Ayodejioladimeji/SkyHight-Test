@@ -62,9 +62,7 @@ const Tables = () => {
         </div>
 
         <div className='users-top-iconbox'>
-          <Link to='/dashboard/users/create'>
-            <button className='btn btn-success'>Create User</button>
-          </Link>
+          <button className='btn btn-success'>Create User</button>
           <button className='btn btn-light'>Delete All</button>
         </div>
       </div>
