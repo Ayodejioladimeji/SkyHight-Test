@@ -134,20 +134,20 @@ const Tables = () => {
             })}
           </tbody>
         </table>
-
-        {filteredData.length === 0 && (
+      </div>
+      <div className='paginate mt-4'>
+        {filteredData.length === 0 ? (
           <p className='text-center bg-danger py-2 text-white mt-4'>
             Data not found
           </p>
+        ) : (
+          <Pagination
+            postsPerPage={postsPerPage}
+            totalPosts={data.length}
+            paginate={paginate}
+            currentPage={currentPage}
+          />
         )}
-      </div>
-      <div className='paginate mt-4'>
-        <Pagination
-          postsPerPage={postsPerPage}
-          totalPosts={data.length}
-          paginate={paginate}
-          currentPage={currentPage}
-        />
       </div>
     </div>
   );
