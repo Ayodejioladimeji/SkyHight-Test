@@ -64,7 +64,6 @@
 
 .paginate {
   cursor: pointer;
-  /* width: 20%; */
   overflow: auto;
 }
 
